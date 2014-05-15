@@ -1,0 +1,23 @@
+EESchema-DOCLIB  Version 2.0  Date: 15/04/2014 01:47:38
+#
+$CMP AGM-2004A-204
+D Symbole general de connexion
+K CONN
+$ENDCMP
+#
+$CMP CONN_16
+D Symbole general de connexion
+K CONN
+$ENDCMP
+#
+$CMP CONN_PANNEL_2X2
+D Symbole general de connecteur
+K CONN
+$ENDCMP
+#
+$CMP SWITCH_1-3
+D Switch inverseur
+K switch
+$ENDCMP
+#
+#End Doc Library
