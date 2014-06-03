@@ -28,11 +28,9 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:MODuino_Control_Chain
-LIBS:Duo_Audio_HMI_Prototype1
 LIBS:MOD_PEX_Prototype1
 LIBS:MOD_PEX_Prototype1-cache
-EELAYER 27 0
+EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
