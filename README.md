@@ -10,3 +10,4 @@ These files were created and can be improved with KiCAD, a free software Electro
 
 This is an Open Hardware project and all of the files in this repository are licensed under the terms of the "Creative Commons By-SA" license.
 
+The firmware source code is freely available at https://github.com/portalmod/mod-fw-expression-pedal
