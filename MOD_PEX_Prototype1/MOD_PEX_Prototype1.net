@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/fsanches/devel/github_portalmod/mod-hw-expression-pedal/MOD_PEX_Prototype1/MOD_PEX_Prototype1.sch)
-    (date "Seg 01 Dez 2014 14:59:55 BRST")
+    (date "Qua 03 Dez 2014 13:41:31 BRST")
     (tool "Eeschema (2014-jul-16 BZR unknown)-product"))
   (components
     (comp (ref U1)
@@ -649,7 +649,7 @@
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
     (library (logical MOD_PEX_Prototype1)
-      (uri Libs/MOD_PEX_Prototype1.lib))
+      (uri /home/fsanches/devel/github_portalmod/mod-hw-expression-pedal/MOD_PEX_Prototype1/Libs/MOD_PEX_Prototype1.lib))
     (library (logical MOD_PEX_Prototype1-cache)
       (uri /home/fsanches/devel/github_portalmod/mod-hw-expression-pedal/MOD_PEX_Prototype1/MOD_PEX_Prototype1-cache.lib)))
   (nets
