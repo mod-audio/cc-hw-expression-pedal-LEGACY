@@ -1,0 +1,3 @@
+[submodule "MOD_PEX_Prototype1/Libs/mod-kicad-footprints"]
+	path = MOD_PEX_Prototype1/Libs/mod-kicad-footprints
+	url = https://github.com/portalmod/mod-kicad-footprints.git
