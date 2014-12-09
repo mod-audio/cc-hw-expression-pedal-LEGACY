@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/fsanches/devel/github_portalmod/mod-hw-expression-pedal/MOD_PEX_Prototype1/MOD_PEX_Prototype1.sch)
-    (date "Ter 09 Dez 2014 14:06:38 BRST")
+    (date "Ter 09 Dez 2014 14:11:26 BRST")
     (tool "Eeschema (2014-jul-16 BZR unknown)-product"))
   (components
     (comp (ref U1)

@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Qua 03 Dez 2014 17:00:34 BRST
+Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Ter 09 Dez 2014 14:11:12 BRST
 
 BeginCmp
 TimeStamp = /53482C44;
@@ -169,10 +169,10 @@ IdModule  = MOD_Footprints_Lib:PIN_ARRAY_3X1;
 EndCmp
 
 BeginCmp
-TimeStamp = /534C5CB7;
+TimeStamp = /54872DA7;
 Reference = P2;
-ValeurCmp = HEADER_5X1;
-IdModule  = MOD_Footprints_Lib:PIN_ARRAY_5x1;
+ValeurCmp = HEADER_5X2;
+IdModule  = MOD_Footprints_Lib:PIN_ARRAY_5x2;
 EndCmp
 
 BeginCmp
@@ -397,6 +397,20 @@ TimeStamp = /534C729F;
 Reference = R28;
 ValeurCmp = 10k;
 IdModule  = MOD_Footprints_Lib:SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = /548734BD;
+Reference = R29;
+ValeurCmp = 0R;
+IdModule  = MOD_Footprints_Lib:SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /54873444;
+Reference = R30;
+ValeurCmp = 0R;
+IdModule  = MOD_Footprints_Lib:SM0805;
 EndCmp
 
 BeginCmp
