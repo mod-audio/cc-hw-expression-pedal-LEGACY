@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Ter 09 Dez 2014 14:11:12 BRST
+Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Ter 09 Dez 2014 16:07:13 BRST
 
 BeginCmp
 TimeStamp = /53482C44;
@@ -416,6 +416,13 @@ EndCmp
 BeginCmp
 TimeStamp = /53482C5F;
 Reference = RT1;
+ValeurCmp = PTC_FUSE;
+IdModule  = MOD_Footprints_Lib:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = /54875B5F;
+Reference = RT2;
 ValeurCmp = PTC_FUSE;
 IdModule  = MOD_Footprints_Lib:SM2920;
 EndCmp
