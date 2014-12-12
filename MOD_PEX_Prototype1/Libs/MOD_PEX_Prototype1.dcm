@@ -1,4 +1,4 @@
-EESchema-DOCLIB  Version 2.0  Date: 15/04/2014 01:47:38
+EESchema-DOCLIB  Version 2.0
 #
 $CMP AGM-2004A-204
 D Symbole general de connexion
@@ -13,6 +13,18 @@ $ENDCMP
 $CMP CONN_PANNEL_2X2
 D Symbole general de connecteur
 K CONN
+$ENDCMP
+#
+$CMP MAX13450E
+D 20Mbps RS485 transceiver with integrated switchable termination
+K RS485
+F http://datasheets.maximintegrated.com/en/ds/MAX13450E-MAX13451E.pdf
+$ENDCMP
+#
+$CMP MMBT3904
+D NPN transistor for general switching and amplification
+K NPN
+F http://www.nxp.com/documents/data_sheet/MMBT3904.pdf
 $ENDCMP
 #
 $CMP SWITCH_1-3

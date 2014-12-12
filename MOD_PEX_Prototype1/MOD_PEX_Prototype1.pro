@@ -1,6 +1,6 @@
-update=Ter 03 Jun 2014 12:27:26 BRT
+update=Sex 12 Dez 2014 17:44:58 BRST
 version=1
-last_client=eeschema
+last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
@@ -34,15 +34,7 @@ LibName2=D:/MOD/Projetos/MOD-Duo/mod-eletronica-duo/Duo_Audio_HMI_Prototype1/Lib
 LibName3=D:/MOD/Projetos/MOD-FOOT/mod-eletronica-foot/MOD_Foot_Prototype1/Libs/MOD_Foot_Prototype1
 [eeschema]
 version=1
-PageLayoutDescrFile=
-SubpartIdSeparator=0
-SubpartFirstId=65
 LibDir=
-NetFmtName=PcbnewAdvanced
-RptD_X=0
-RptD_Y=100
-RptLab=1
-LabSize=60
 [eeschema/libraries]
 LibName1=power
 LibName2=device
