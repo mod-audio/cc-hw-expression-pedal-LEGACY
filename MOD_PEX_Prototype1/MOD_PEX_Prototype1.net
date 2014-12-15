@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/fsanches/devel/github_portalmod/mod-hw-expression-pedal/MOD_PEX_Prototype1/MOD_PEX_Prototype1.sch)
-    (date "Seg 15 Dez 2014 13:58:10 BRST")
+    (date "Seg 15 Dez 2014 14:33:58 BRST")
     (tool "Eeschema (2014-jul-16 BZR unknown)-product"))
   (components
     (comp (ref CN1)
@@ -402,7 +402,7 @@
       (tstamp 548B6E47))
     (comp (ref R22)
       (value 0R)
-      (footprint MOD_Footprints_Lib:SM0805)
+      (footprint MOD_Footprints_Lib:SM0603)
       (libsource (lib device) (part R))
       (sheetpath (names /CPU/) (tstamps /548B4CB1/))
       (tstamp 548B6E50))
@@ -414,19 +414,19 @@
       (tstamp 548B6E88))
     (comp (ref R30)
       (value 0R)
-      (footprint MOD_Footprints_Lib:SM0805)
+      (footprint MOD_Footprints_Lib:SM0603)
       (libsource (lib device) (part R))
       (sheetpath (names /CPU/) (tstamps /548B4CB1/))
       (tstamp 548B6E9E))
     (comp (ref R29)
       (value 0R)
-      (footprint MOD_Footprints_Lib:SM0805)
+      (footprint MOD_Footprints_Lib:SM0603)
       (libsource (lib device) (part R))
       (sheetpath (names /CPU/) (tstamps /548B4CB1/))
       (tstamp 548B6EA5))
     (comp (ref R15)
       (value 0R)
-      (footprint MOD_Footprints_Lib:SM0805)
+      (footprint MOD_Footprints_Lib:SM0603)
       (libsource (lib device) (part R))
       (sheetpath (names /CPU/) (tstamps /548B4CB1/))
       (tstamp 548F0B2A)))
@@ -443,74 +443,6 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
-    (libpart (lib device) (part CP1)
-      (description "Condensateur polarise")
-      (footprints
-        (fp CP*)
-        (fp SM*))
-      (fields
-        (field (name Reference) C)
-        (field (name Value) CP1))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib device) (part CRYSTAL)
-      (fields
-        (field (name Reference) X)
-        (field (name Value) CRYSTAL))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))))
-    (libpart (lib device) (part DIODE)
-      (description "Diode simple")
-      (footprints
-        (fp D?)
-        (fp S*))
-      (fields
-        (field (name Reference) D)
-        (field (name Value) DIODE))
-      (pins
-        (pin (num 1) (name A) (type passive))
-        (pin (num 2) (name K) (type passive))))
-    (libpart (lib device) (part FUSE)
-      (fields
-        (field (name Reference) F)
-        (field (name Value) FUSE))
-      (pins
-        (pin (num 1) (name ~) (type input))
-        (pin (num 2) (name ~) (type input))))
-    (libpart (lib device) (part R)
-      (description Resistance)
-      (footprints
-        (fp R?)
-        (fp SM0603)
-        (fp SM0805)
-        (fp R?-*)
-        (fp SM1206))
-      (fields
-        (field (name Reference) R)
-        (field (name Value) R))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib device) (part ZENERsmall)
-      (footprints
-        (fp D?)
-        (fp SO*)
-        (fp SM*))
-      (fields
-        (field (name Reference) D)
-        (field (name Value) ZENERsmall))
-      (pins
-        (pin (num 1) (name A) (type passive))
-        (pin (num 2) (name K) (type passive))))
-    (libpart (lib conn) (part CONN_1)
-      (description "1 pin")
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_1))
-      (pins
-        (pin (num 1) (name 1) (type passive))))
     (libpart (lib conn) (part CONN_2)
       (description "Symbole general de connecteur")
       (fields
@@ -528,22 +460,13 @@
         (pin (num 1) (name P1) (type passive))
         (pin (num 2) (name PM) (type passive))
         (pin (num 3) (name P3) (type passive))))
-    (libpart (lib conn) (part CONN_5X2)
-      (description "Symbole general de connecteur")
+    (libpart (lib device) (part CRYSTAL)
       (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_5X2))
+        (field (name Reference) X)
+        (field (name Value) CRYSTAL))
       (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))
-        (pin (num 3) (name ~) (type passive))
-        (pin (num 4) (name ~) (type passive))
-        (pin (num 5) (name ~) (type passive))
-        (pin (num 6) (name ~) (type passive))
-        (pin (num 7) (name ~) (type passive))
-        (pin (num 8) (name ~) (type passive))
-        (pin (num 9) (name ~) (type passive))
-        (pin (num 10) (name ~) (type passive))))
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))))
     (libpart (lib MOD_PEX_Prototype1) (part CONN_PANNEL_2X2)
       (description "Symbole general de connecteur")
       (fields
@@ -685,14 +608,91 @@
         (pin (num 1) (name 1) (type passive))
         (pin (num 2) (name 2) (type passive))
         (pin (num 3) (name 3) (type passive))
-        (pin (num 4) (name 4) (type passive)))))
+        (pin (num 4) (name 4) (type passive))))
+    (libpart (lib device) (part ZENERsmall)
+      (footprints
+        (fp D?)
+        (fp SO*)
+        (fp SM*))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) ZENERsmall))
+      (pins
+        (pin (num 1) (name A) (type passive))
+        (pin (num 2) (name K) (type passive))))
+    (libpart (lib conn) (part CONN_5X2)
+      (description "Symbole general de connecteur")
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_5X2))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))
+        (pin (num 3) (name ~) (type passive))
+        (pin (num 4) (name ~) (type passive))
+        (pin (num 5) (name ~) (type passive))
+        (pin (num 6) (name ~) (type passive))
+        (pin (num 7) (name ~) (type passive))
+        (pin (num 8) (name ~) (type passive))
+        (pin (num 9) (name ~) (type passive))
+        (pin (num 10) (name ~) (type passive))))
+    (libpart (lib device) (part DIODE)
+      (description "Diode simple")
+      (footprints
+        (fp D?)
+        (fp S*))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) DIODE))
+      (pins
+        (pin (num 1) (name A) (type passive))
+        (pin (num 2) (name K) (type passive))))
+    (libpart (lib conn) (part CONN_1)
+      (description "1 pin")
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_1))
+      (pins
+        (pin (num 1) (name 1) (type passive))))
+    (libpart (lib device) (part FUSE)
+      (fields
+        (field (name Reference) F)
+        (field (name Value) FUSE))
+      (pins
+        (pin (num 1) (name ~) (type input))
+        (pin (num 2) (name ~) (type input))))
+    (libpart (lib device) (part R)
+      (description Resistance)
+      (footprints
+        (fp R?)
+        (fp SM0603)
+        (fp SM0805)
+        (fp R?-*)
+        (fp SM1206))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part CP1)
+      (description "Condensateur polarise")
+      (footprints
+        (fp CP*)
+        (fp SM*))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) CP1))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive)))))
   (libraries
-    (library (logical device)
-      (uri /usr/share/kicad/library/device.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
     (library (logical MOD_PEX_Prototype1)
-      (uri /home/fsanches/devel/github_portalmod/mod-hw-expression-pedal/MOD_PEX_Prototype1/Libs/MOD_PEX_Prototype1.lib)))
+      (uri /home/fsanches/devel/github_portalmod/mod-hw-expression-pedal/MOD_PEX_Prototype1/Libs/MOD_PEX_Prototype1.lib))
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib)))
   (nets
     (net (code 1) (name POT)
       (node (ref U1) (pin 35))
