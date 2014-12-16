@@ -12,6 +12,12 @@ This project uses a set of KiCAD pcb footprints created by the MOD dev-team (htt
 
 > git clone --recursive https://github.com/portalmod/mod-hw-expression-pedal.git
 
+## 3d models ##
+
+If you want to use the 3d-viewer, you will need to install the kicad-common package which provides (among other things) a set of 3d models of electronic components.
+
+> sudo apt-get install kicad-common
+
 ## Licensing ##
 
 This is an Open Hardware project and all of the files in this repository are licensed under the terms of the "Creative Commons By-SA" license.
