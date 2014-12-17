@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Seg 15 Dez 2014 14:34:23 BRST
+Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = Qua 17 Dez 2014 17:49:29 BRST
 
 BeginCmp
 TimeStamp = /548B4B93/548B663E;
@@ -283,7 +283,7 @@ EndCmp
 BeginCmp
 TimeStamp = /548B4C68/548B5B16;
 Reference = R12;
-ValeurCmp = 10k;
+ValeurCmp = 100k;
 IdModule  = MOD_Footprints_Lib:SM0603;
 EndCmp
 
