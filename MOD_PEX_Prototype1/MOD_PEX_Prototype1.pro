@@ -1,4 +1,4 @@
-update=Sex 12 Dez 2014 17:44:58 BRST
+update=Qui 18 Dez 2014 14:22:20 BRST
 version=1
 last_client=kicad
 [cvpcb]
@@ -66,3 +66,16 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=Libs/MOD_PEX_Prototype1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=Docs/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+RptD_X=0
+RptD_Y=100
+RptLab=1
+LabSize=60
