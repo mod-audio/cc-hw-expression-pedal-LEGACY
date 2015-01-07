@@ -786,7 +786,7 @@
             <uri>/usr/local/share/kicad/library/conn.lib</uri>
         </library>
         <library logical="MOD_PEX_Prototype1">
-            <uri>Libs/MOD_PEX_Prototype1.lib</uri>
+            <uri>Libs/mod-kicad-libs/MOD_PEX_Prototype1.lib</uri>
         </library>
     </libraries>
     <nets>

@@ -692,7 +692,7 @@
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
     (library (logical MOD_PEX_Prototype1)
-      (uri /home/fsanches/devel/github_portalmod/mod-hw-expression-pedal/MOD_PEX_Prototype1/Libs/MOD_PEX_Prototype1.lib)))
+      (uri /home/fsanches/devel/github_portalmod/mod-hw-expression-pedal/MOD_PEX_Prototype1/Libs/mod-kicad-libs/MOD_PEX_Prototype1.lib)))
   (nets
     (net (code 1) (name POT)
       (node (ref R19) (pin 2))

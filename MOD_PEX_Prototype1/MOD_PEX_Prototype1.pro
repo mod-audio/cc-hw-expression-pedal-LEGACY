@@ -1,4 +1,4 @@
-update=Qui 18 Dez 2014 14:22:20 BRST
+update=Qua 07 Jan 2015 13:48:34 BRST
 version=1
 last_client=kicad
 [cvpcb]
@@ -29,9 +29,21 @@ BoardOutlineThickness=0.200000000000
 ModuleOutlineThickness=0.200000000000
 [pcbnew/libraries]
 LibDir=
-LibName1=Libs/MOD_PEX_Prototype1
-LibName2=D:/MOD/Projetos/MOD-Duo/mod-eletronica-duo/Duo_Audio_HMI_Prototype1/Libs/Duo_Audio_HMI_Prototype1
-LibName3=D:/MOD/Projetos/MOD-FOOT/mod-eletronica-foot/MOD_Foot_Prototype1/Libs/MOD_Foot_Prototype1
+LibName1=Libs/mod-kicad-libs/MOD_PEX_Prototype1
+LibName2=Libs/mod-kicad-libs/Duo_Audio_HMI_RC1A
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=Docs/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+RptD_X=0
+RptD_Y=100
+RptLab=1
+LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -65,17 +77,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=Libs/MOD_PEX_Prototype1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=Docs/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-RptD_X=0
-RptD_Y=100
-RptLab=1
-LabSize=60
+LibName30=Libs/mod-kicad-libs/MOD_PEX_Prototype1
+LibName31=Libs/mod-kicad-libs/Duo_Audio_HMI_RC1A
