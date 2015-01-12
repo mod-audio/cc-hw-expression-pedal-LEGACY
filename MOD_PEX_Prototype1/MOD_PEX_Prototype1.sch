@@ -418,8 +418,8 @@ $EndSheet
 $Sheet
 S 7300 3100 2450 1100
 U 548B4C68
-F0 "Control_Chain" 60
-F1 "Control_Chain.sch" 60
+F0 "Control Chain" 60
+F1 "control-chain.sch" 60
 $EndSheet
 $Sheet
 S 7300 4600 2450 1100
