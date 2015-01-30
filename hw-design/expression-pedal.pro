@@ -10,7 +10,7 @@ EquName1=devcms
 version=1
 [pcbnew]
 version=1
-LastNetListRead=MOD_PEX_Prototype1.net
+LastNetListRead=expression-pedal.net
 UseCmpFile=1
 PadDrill=1.550000000000
 PadDrillOvalY=1.550000000000

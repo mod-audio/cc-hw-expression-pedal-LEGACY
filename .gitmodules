@@ -1,6 +1,6 @@
-[submodule "MOD_PEX_Prototype1/Libs/mod-kicad-footprints"]
-	path = MOD_PEX_Prototype1/Libs/mod-kicad-footprints
+[submodule "hw-design/Libs/mod-kicad-footprints"]
+	path = hw-design/Libs/mod-kicad-footprints
 	url = https://github.com/portalmod/mod-kicad-footprints.git
-[submodule "MOD_PEX_Prototype1/Libs/mod-kicad-libs"]
-	path = MOD_PEX_Prototype1/Libs/mod-kicad-libs
+[submodule "hw-design/Libs/mod-kicad-libs"]
+	path = hw-design/Libs/mod-kicad-libs
 	url = https://github.com/portalmod/mod-kicad-libs.git
