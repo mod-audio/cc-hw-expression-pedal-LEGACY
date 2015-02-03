@@ -20,7 +20,7 @@ $Sheet
 S 850  700  2450 1150
 U 548B4B93
 F0 "Power" 60
-F1 "Power.sch" 60
+F1 "power.sch" 60
 $EndSheet
 $Sheet
 S 850  2200 2450 1100
@@ -32,7 +32,7 @@ $Sheet
 S 850  3700 2450 1100
 U 548B4CB1
 F0 "CPU" 60
-F1 "CPU.sch" 60
+F1 "cpu.sch" 60
 $EndSheet
 $Sheet
 S 850  5050 2500 1100
