@@ -1,4 +1,4 @@
-update=Mon 12 Jan 2015 12:11:23 PM BRST
+update=Wed 18 Feb 2015 02:30:37 PM BRST
 version=1
 last_client=kicad
 [cvpcb]
@@ -46,7 +46,12 @@ RptLab=1
 LabSize=60
 [eeschema]
 version=1
-LibDir=
+LibDir=/home/ricardo/devel/kicad-library-ricardocrudo
 [eeschema/libraries]
-LibName1=Libs/mod-kicad-libs/MOD_PEX_Prototype1
-LibName2=Libs/mod-kicad-libs/Duo_Audio_HMI_RC1A
+LibName1=library/regul
+LibName2=library/power
+LibName3=library/device
+LibName4=library/transistors
+LibName5=library/nxp_armmcu
+LibName6=library/conn
+LibName7=library/interface
