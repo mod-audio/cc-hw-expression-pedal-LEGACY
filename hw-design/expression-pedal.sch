@@ -1,6 +1,11 @@
 EESchema Schematic File Version 2
-LIBS:MOD_PEX_Prototype1
-LIBS:Duo_Audio_HMI_RC1A
+LIBS:regul
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:nxp_armmcu
+LIBS:conn
+LIBS:interface
 LIBS:expression-pedal-cache
 EELAYER 25 0
 EELAYER END
