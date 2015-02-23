@@ -1,4 +1,4 @@
-update=Wed 18 Feb 2015 02:30:37 PM BRST
+update=Mon 23 Feb 2015 12:45:10 PM BRT
 version=1
 last_client=kicad
 [cvpcb]
@@ -6,8 +6,6 @@ version=1
 NetIExt=net
 [cvpcb/libraries]
 EquName1=devcms
-[general]
-version=1
 [pcbnew]
 version=1
 LastNetListRead=expression-pedal.net
@@ -55,3 +53,5 @@ LibName4=library/transistors
 LibName5=library/nxp_armmcu
 LibName6=library/conn
 LibName7=library/interface
+[general]
+version=1
