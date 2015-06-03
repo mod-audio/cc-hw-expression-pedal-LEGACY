@@ -1,4 +1,4 @@
-update=Wed 03 Jun 2015 11:49:34 AM CEST
+update=Wed 03 Jun 2015 05:36:20 PM CEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -46,7 +46,7 @@ LabSize=60
 version=1
 [eeschema]
 version=1
-LibDir=lib/kicad-library
+LibDir=../lib/kicad-library
 [eeschema/libraries]
 LibName1=library/regul
 LibName2=library/power

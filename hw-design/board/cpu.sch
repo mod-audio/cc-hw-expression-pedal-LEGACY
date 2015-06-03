@@ -6,6 +6,7 @@ LIBS:transistors
 LIBS:nxp_armmcu
 LIBS:conn
 LIBS:interface
+LIBS:expression-pedal-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -544,4 +545,5 @@ F 3 "" H 4450 1850 60  0000 C CNN
 	1    4450 1850
 	1    0    0    -1  
 $EndComp
+NoConn ~ 6400 4950
 $EndSCHEMATC
