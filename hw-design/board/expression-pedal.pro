@@ -1,4 +1,4 @@
-update=Wed 03 Jun 2015 05:36:20 PM CEST
+update=Wed 03 Jun 2015 05:45:32 PM CEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -46,12 +46,12 @@ LabSize=60
 version=1
 [eeschema]
 version=1
-LibDir=../lib/kicad-library
+LibDir=../lib
 [eeschema/libraries]
-LibName1=library/regul
-LibName2=library/power
-LibName3=library/device
-LibName4=library/transistors
-LibName5=library/nxp_armmcu
-LibName6=library/conn
-LibName7=library/interface
+LibName1=kicad-library/library/conn
+LibName2=kicad-library/library/device
+LibName3=kicad-library/library/interface
+LibName4=kicad-library/library/power
+LibName5=kicad-library/library/regul
+LibName6=kicad-library/library/transistors
+LibName7=local-library/nxp_armmcu
