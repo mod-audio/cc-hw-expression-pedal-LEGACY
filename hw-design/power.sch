@@ -77,7 +77,7 @@ F 3 "~" H 4050 2250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DIODE D1
+L D D1
 U 1 1 548B6651
 P 2900 2000
 F 0 "D1" H 2900 2100 40  0000 C CNN
@@ -85,7 +85,7 @@ F 1 "CGRA4007-G" H 2900 1900 40  0000 C CNN
 F 2 "Diodes_SMD:Diode-SMA_Standard" H 2900 2000 60  0001 C CNN
 F 3 "~" H 2900 2000 60  0000 C CNN
 	1    2900 2000
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L FUSE RT1
@@ -181,14 +181,14 @@ Wire Wire Line
 	4350 1900 4350 2100
 Connection ~ 4350 2000
 Wire Wire Line
-	3100 2000 3300 2000
+	3050 2000 3300 2000
 Wire Wire Line
 	5900 1900 5900 2100
 Connection ~ 5900 2000
 Wire Wire Line
 	5550 1800 5550 2100
 Wire Wire Line
-	2250 2000 2700 2000
+	2250 2000 2750 2000
 Wire Wire Line
 	3650 2450 3650 2600
 Wire Wire Line
