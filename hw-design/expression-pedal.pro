@@ -1,4 +1,4 @@
-update=Mon 23 Feb 2015 12:45:10 PM BRT
+update=Wed 03 Jun 2015 11:49:34 AM CEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -42,9 +42,11 @@ RptD_X=0
 RptD_Y=100
 RptLab=1
 LabSize=60
+[general]
+version=1
 [eeschema]
 version=1
-LibDir=/home/ricardo/devel/kicad-library-ricardocrudo
+LibDir=lib/kicad-library
 [eeschema/libraries]
 LibName1=library/regul
 LibName2=library/power
@@ -53,5 +55,3 @@ LibName4=library/transistors
 LibName5=library/nxp_armmcu
 LibName6=library/conn
 LibName7=library/interface
-[general]
-version=1
