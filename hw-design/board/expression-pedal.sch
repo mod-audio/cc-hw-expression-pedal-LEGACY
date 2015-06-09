@@ -1,11 +1,11 @@
 EESchema Schematic File Version 2
-LIBS:regul
-LIBS:power
+LIBS:conn
 LIBS:device
+LIBS:interface
+LIBS:power
+LIBS:regul
 LIBS:transistors
 LIBS:nxp_armmcu
-LIBS:conn
-LIBS:interface
 LIBS:expression-pedal-cache
 EELAYER 25 0
 EELAYER END
