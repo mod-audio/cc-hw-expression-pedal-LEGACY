@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/ricardo/devel/mod-hw-expression-pedal/hw-design/board/expression-pedal.sch</source>
-    <date>Thu 11 Jun 2015 07:42:40 PM CEST</date>
+    <date>Thu 11 Jun 2015 07:51:51 PM CEST</date>
     <tool>Eeschema (2015-05-18 BZR 5668)-product</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -452,7 +452,7 @@
     </comp>
     <comp ref="P3">
       <value>CONN_02X05</value>
-      <footprint>Pin_Headers:Pin_Header_Straight_2x05</footprint>
+      <footprint>Pin_Headers:Pin_Header_Straight_2x05_Pitch1.27mm</footprint>
       <fields>
         <field name="MPN">-</field>
       </fields>
@@ -1256,11 +1256,11 @@
     <library logical="conn">
       <uri>/home/ricardo/devel/mod-hw-expression-pedal/hw-design/lib/kicad-library/library/conn.lib</uri>
     </library>
-    <library logical="device">
-      <uri>/home/ricardo/devel/mod-hw-expression-pedal/hw-design/lib/kicad-library/library/device.lib</uri>
-    </library>
     <library logical="interface">
       <uri>/home/ricardo/devel/mod-hw-expression-pedal/hw-design/lib/kicad-library/library/interface.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/home/ricardo/devel/mod-hw-expression-pedal/hw-design/lib/kicad-library/library/device.lib</uri>
     </library>
     <library logical="regul">
       <uri>/home/ricardo/devel/mod-hw-expression-pedal/hw-design/lib/kicad-library/library/regul.lib</uri>

@@ -15,7 +15,7 @@ Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,MPN
 14,1,J2,CC_OUTPUT,conn:RJ45_LEDS,MOD_Footprints:RJ45-RJHSE5084,,RJHSE-5381
 15,1,P1,CHAIN,conn:CONN_01X04,Pin_Headers:Pin_Header_Straight_1x04,,-
 16,1,P2,USB_OTG,conn:USB_OTG,,,10033526-N3212LF
-17,1,P3,CONN_02X05,conn:CONN_02X05,Pin_Headers:Pin_Header_Straight_2x05,,-
+17,1,P3,CONN_02X05,conn:CONN_02X05,Pin_Headers:Pin_Header_Straight_2x05_Pitch1.27mm,,-
 18,1,P4,FOOT,conn:CONN_01X02,Pin_Headers:Pin_Header_Straight_1x02,,M20-9990246
 19,1,P5,10K POT,conn:CONN_01X03,Pin_Headers:Pin_Header_Straight_1x03,,M20-9990346
 20,4,"Q1, Q2, Q4, Q5",2N7002,device:Q_NMOS_GSD,Housings_SOT-23_SOT-143_TSOT-6:SOT-23,,"2N7002P,215"
