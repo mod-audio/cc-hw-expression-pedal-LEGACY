@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/ricardo/devel/mod-hw-expression-pedal/hw-design/board/expression-pedal.sch</source>
-    <date>Thu 11 Jun 2015 07:51:51 PM CEST</date>
+    <date>Tue 23 Jun 2015 01:15:45 PM CEST</date>
     <tool>Eeschema (2015-05-18 BZR 5668)-product</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -73,7 +73,7 @@
   <components>
     <comp ref="C7">
       <value>100uF</value>
-      <footprint>Capacitors_ThroughHole:Capacitor5x6RM2.5</footprint>
+      <footprint>Capacitors_SMD:c_elec_6.3x5.3</footprint>
       <fields>
         <field name="MPN">UWX1C101MCL1GB</field>
       </fields>
@@ -83,7 +83,7 @@
     </comp>
     <comp ref="C4">
       <value>100uF</value>
-      <footprint>Capacitors_ThroughHole:Capacitor5x6RM2.5</footprint>
+      <footprint>Capacitors_SMD:c_elec_6.3x5.3</footprint>
       <fields>
         <field name="MPN">UWX1C101MCL1GB</field>
       </fields>
@@ -113,7 +113,7 @@
     </comp>
     <comp ref="C1">
       <value>10uF</value>
-      <footprint>Capacitors_ThroughHole:Capacitor5x6RM2.5</footprint>
+      <footprint>Capacitors_SMD:c_elec_5x5.3</footprint>
       <fields>
         <field name="MPN">UWX1E100MCL1GB</field>
       </fields>
@@ -153,6 +153,7 @@
     </comp>
     <comp ref="Q3">
       <value>FDN306P</value>
+      <footprint>local-footprints:SOT-23-fairchild</footprint>
       <fields>
         <field name="MPN">FDN306P_F095</field>
       </fields>
@@ -331,10 +332,10 @@
       <tstamp>557A7849</tstamp>
     </comp>
     <comp ref="Q6">
-      <value>RFML8244TRPBF</value>
+      <value>IRFML8244TRPBF</value>
       <footprint>Housings_SOT-23_SOT-143_TSOT-6:SOT-23</footprint>
       <fields>
-        <field name="MPN">RFML8244TRPBF</field>
+        <field name="MPN">IRFML8244TRPBF</field>
       </fields>
       <libsource lib="device" part="Q_NMOS_GSD"/>
       <sheetpath names="/Control Chain/" tstamps="/548B4C68/"/>
@@ -522,6 +523,7 @@
     </comp>
     <comp ref="P2">
       <value>USB_OTG</value>
+      <footprint>Connect:USB_Mini-B</footprint>
       <fields>
         <field name="MPN">10033526-N3212LF</field>
       </fields>
@@ -831,37 +833,28 @@
     </comp>
   </components>
   <libparts>
-    <libpart lib="conn" part="CONN_01X02">
-      <footprints>
-        <fp>Pin_Header_Straight_1X02</fp>
-        <fp>Pin_Header_Angled_1X02</fp>
-        <fp>Socket_Strip_Straight_1X02</fp>
-        <fp>Socket_Strip_Angled_1X02</fp>
-      </footprints>
+    <libpart lib="device" part="Q_NMOS_GSD">
+      <description>Transistor N-MOSFET (general)</description>
       <fields>
-        <field name="Reference">P</field>
-        <field name="Value">CONN_01X02</field>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_GSD</field>
       </fields>
       <pins>
-        <pin num="1" name="P1" type="passive"/>
-        <pin num="2" name="P2" type="passive"/>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="conn" part="CONN_01X03">
-      <footprints>
-        <fp>Pin_Header_Straight_1X03</fp>
-        <fp>Pin_Header_Angled_1X03</fp>
-        <fp>Socket_Strip_Straight_1X03</fp>
-        <fp>Socket_Strip_Angled_1X03</fp>
-      </footprints>
+    <libpart lib="device" part="Q_PMOS_GSD">
+      <description>Transistor P-MOSFET (general)</description>
       <fields>
-        <field name="Reference">P</field>
-        <field name="Value">CONN_01X03</field>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_PMOS_GSD</field>
       </fields>
       <pins>
-        <pin num="1" name="P1" type="passive"/>
-        <pin num="2" name="P2" type="passive"/>
-        <pin num="3" name="P3" type="passive"/>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="conn" part="CONN_01X04">
@@ -880,6 +873,23 @@
         <pin num="2" name="P2" type="passive"/>
         <pin num="3" name="P3" type="passive"/>
         <pin num="4" name="P4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X03">
+      <footprints>
+        <fp>Pin_Header_Straight_1X03</fp>
+        <fp>Pin_Header_Angled_1X03</fp>
+        <fp>Socket_Strip_Straight_1X03</fp>
+        <fp>Socket_Strip_Angled_1X03</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="conn" part="CONN_02X05">
@@ -906,6 +916,68 @@
         <pin num="10" name="P10" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="nxp_armmcu" part="LPC11U24FBD48/401">
+      <description>LPC11U24FBD48/401, 32-bit ARM Cortex-M0 microcontroller, 32kB Flash, 8k SRAM, USART, I2C, SPI, ADC 8ch</description>
+      <docs>http://www.nxp.com/documents/data_sheet/LPC11U2X.pdf</docs>
+      <footprints>
+        <fp>LQFP48*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LPC11U24FBD48/401</field>
+        <field name="Footprint">Housings_QFP:LQFP-80_12x12mm_Pitch0.5mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PIO1_25/CT32B0_MAT1" type="BiDi"/>
+        <pin num="2" name="PIO1_19/~DTR~/SSEL1" type="BiDi"/>
+        <pin num="3" name="~RESET~/PIO0_0" type="BiDi"/>
+        <pin num="4" name="PIO0_1/CLKOUT/CT32B0_MAT2/USB_FTOGGLE" type="BiDi"/>
+        <pin num="5" name="VSS" type="power_in"/>
+        <pin num="6" name="XTALIN" type="input"/>
+        <pin num="7" name="XTALOUT" type="output"/>
+        <pin num="8" name="VDD" type="power_in"/>
+        <pin num="9" name="PIO0_20/CT16B1_CAP0" type="BiDi"/>
+        <pin num="10" name="PIO0_2/SSEL0/CT16B0_CAP0" type="BiDi"/>
+        <pin num="11" name="PIO1_26/CT32B0_MAT2/RXD" type="BiDi"/>
+        <pin num="12" name="PIO1_27/CT32B0_MAT3/TXD" type="BiDi"/>
+        <pin num="13" name="PIO1_20/~DSR~/SCK1" type="BiDi"/>
+        <pin num="14" name="PIO0_3/USB_VBUS" type="BiDi"/>
+        <pin num="15" name="PIO0_4/SCL" type="BiDi"/>
+        <pin num="16" name="PIO0_5/SDA" type="BiDi"/>
+        <pin num="17" name="PIO0_21/CT16B1_MAT0/MOSI1" type="BiDi"/>
+        <pin num="18" name="PIO1_23/CT16B1_MAT1/SSEL1" type="BiDi"/>
+        <pin num="19" name="USB_DM" type="BiDi"/>
+        <pin num="20" name="USB_DP" type="BiDi"/>
+        <pin num="21" name="PIO1_24/CT32B0_MAT0" type="BiDi"/>
+        <pin num="22" name="PIO0_6/~USB_CONNECT~/SCK0" type="BiDi"/>
+        <pin num="23" name="PIO0_7/~CTS~" type="BiDi"/>
+        <pin num="24" name="PIO1_28/CT32B0_CAP0/SCLK" type="BiDi"/>
+        <pin num="25" name="PIO1_31" type="BiDi"/>
+        <pin num="26" name="PIO1_21/~DCD~/MISO1" type="BiDi"/>
+        <pin num="27" name="PIO0_8/MISO0/CT16B0_MAT0" type="BiDi"/>
+        <pin num="28" name="PIO0_9/MOSI0/CT16B0_MAT1" type="BiDi"/>
+        <pin num="29" name="SWCLK/PIO0_10/SCK0/CT16B0_MAT2" type="BiDi"/>
+        <pin num="30" name="PIO0_22/AD6/CT16B1_MAT1/MISO1" type="BiDi"/>
+        <pin num="31" name="PIO1_29/SCK0/CT32B0_CAP1" type="BiDi"/>
+        <pin num="32" name="TDI/PIO0_11/AD0/CT32B0_MAT3" type="BiDi"/>
+        <pin num="33" name="TMS/PIO0_12/AD1/CT32B1_CAP0" type="BiDi"/>
+        <pin num="34" name="TDO/PIO0_13/AD2/CT32B1_MAT0" type="BiDi"/>
+        <pin num="35" name="~TRST~/PIO0_14/AD3/CT32B1_MAT1" type="BiDi"/>
+        <pin num="36" name="PIO1_13/~DTR~/CT16B0_MAT0/TXD" type="BiDi"/>
+        <pin num="37" name="PIO1_14/~DSR~/CT16B0_MAT1/RXD" type="BiDi"/>
+        <pin num="38" name="PIO1_22/~RI~/MOSI1" type="BiDi"/>
+        <pin num="39" name="SWDIO/PIO0_15/AD4/CT32B1_MAT2" type="BiDi"/>
+        <pin num="40" name="PIO0_16/AD5/CT32B1_MAT3/WAKEUP" type="BiDi"/>
+        <pin num="41" name="VSS" type="power_in"/>
+        <pin num="42" name="PIO0_23/AD7" type="BiDi"/>
+        <pin num="43" name="PIO1_15/~DCD~/CT16B0_MAT2/SCK1" type="BiDi"/>
+        <pin num="44" name="VDD" type="power_in"/>
+        <pin num="45" name="PIO0_17/~RTS~/CT32B0_CAP0/SCLK" type="BiDi"/>
+        <pin num="46" name="PIO0_18/RXD/CT32B0_MAT0" type="BiDi"/>
+        <pin num="47" name="PIO0_19/TXD/CT32B0_MAT1" type="BiDi"/>
+        <pin num="48" name="PIO1_16/~RI~/CT16B0_CAP0" type="BiDi"/>
+      </pins>
+    </libpart>
     <libpart lib="conn" part="RJ45_LEDS">
       <description>RJ45, status leds</description>
       <footprints>
@@ -928,6 +1000,31 @@
         <pin num="10" name="~" type="passive"/>
         <pin num="11" name="~" type="passive"/>
         <pin num="12" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="regul" part="NCP1117ST50T3G">
+      <aliases>
+        <alias>NCP1117ST12T3G</alias>
+        <alias>NCP1117ST15T3G</alias>
+        <alias>NCP1117ST18T3G</alias>
+        <alias>NCP1117ST20T3G</alias>
+        <alias>NCP1117ST25T3G</alias>
+        <alias>NCP1117ST285T3G</alias>
+        <alias>NCP1117ST33T3G</alias>
+      </aliases>
+      <description>NCP1117ST50T3G, 1A Low drop-out regulator, Fixed Output 5V, SOT223</description>
+      <docs>http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF</docs>
+      <footprints>
+        <fp>SOT223</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">NCP1117ST50T3G</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
       </pins>
     </libpart>
     <libpart lib="conn" part="USB_OTG">
@@ -1035,54 +1132,6 @@
         <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="FUSE">
-      <fields>
-        <field name="Reference">F</field>
-        <field name="Value">FUSE</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="input"/>
-        <pin num="2" name="~" type="input"/>
-      </pins>
-    </libpart>
-    <libpart lib="device" part="LED_RGB">
-      <fields>
-        <field name="Reference">D</field>
-        <field name="Value">LED_RGB</field>
-      </fields>
-      <pins>
-        <pin num="BA" name="BLUE_ANODE" type="passive"/>
-        <pin num="BC" name="BLUE_CATHODE" type="passive"/>
-        <pin num="GA" name="GREEN_ANODE" type="passive"/>
-        <pin num="GC" name="GREEN_CATHODE" type="passive"/>
-        <pin num="RA" name="RED_ANODE" type="passive"/>
-        <pin num="RC" name="RED_CATHODE" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="device" part="Q_NMOS_GSD">
-      <description>Transistor N-MOSFET (general)</description>
-      <fields>
-        <field name="Reference">Q</field>
-        <field name="Value">Q_NMOS_GSD</field>
-      </fields>
-      <pins>
-        <pin num="1" name="G" type="input"/>
-        <pin num="2" name="S" type="passive"/>
-        <pin num="3" name="D" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="device" part="Q_PMOS_GSD">
-      <description>Transistor P-MOSFET (general)</description>
-      <fields>
-        <field name="Reference">Q</field>
-        <field name="Value">Q_PMOS_GSD</field>
-      </fields>
-      <pins>
-        <pin num="1" name="G" type="input"/>
-        <pin num="2" name="S" type="passive"/>
-        <pin num="3" name="D" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="device" part="Q_PNP_BEC">
       <description>Transistor PNP (general)</description>
       <fields>
@@ -1164,109 +1213,62 @@
         <pin num="14" name="VCC" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="regul" part="NCP1117ST50T3G">
-      <aliases>
-        <alias>NCP1117ST12T3G</alias>
-        <alias>NCP1117ST15T3G</alias>
-        <alias>NCP1117ST18T3G</alias>
-        <alias>NCP1117ST20T3G</alias>
-        <alias>NCP1117ST25T3G</alias>
-        <alias>NCP1117ST285T3G</alias>
-        <alias>NCP1117ST33T3G</alias>
-      </aliases>
-      <description>NCP1117ST50T3G, 1A Low drop-out regulator, Fixed Output 5V, SOT223</description>
-      <docs>http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF</docs>
-      <footprints>
-        <fp>SOT223</fp>
-      </footprints>
+    <libpart lib="device" part="FUSE">
       <fields>
-        <field name="Reference">U</field>
-        <field name="Value">NCP1117ST50T3G</field>
+        <field name="Reference">F</field>
+        <field name="Value">FUSE</field>
       </fields>
       <pins>
-        <pin num="1" name="GND" type="power_in"/>
-        <pin num="2" name="VO" type="power_out"/>
-        <pin num="3" name="VI" type="power_in"/>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
       </pins>
     </libpart>
-    <libpart lib="nxp_armmcu" part="LPC11U24FBD48/401">
-      <description>LPC11U24FBD48/401, 32-bit ARM Cortex-M0 microcontroller, 32kB Flash, 8k SRAM, USART, I2C, SPI, ADC 8ch</description>
-      <docs>http://www.nxp.com/documents/data_sheet/LPC11U2X.pdf</docs>
-      <footprints>
-        <fp>LQFP48*</fp>
-      </footprints>
+    <libpart lib="device" part="LED_RGB">
       <fields>
-        <field name="Reference">U</field>
-        <field name="Value">LPC11U24FBD48/401</field>
-        <field name="Footprint">Housings_QFP:LQFP-80_12x12mm_Pitch0.5mm</field>
+        <field name="Reference">D</field>
+        <field name="Value">LED_RGB</field>
       </fields>
       <pins>
-        <pin num="1" name="PIO1_25/CT32B0_MAT1" type="BiDi"/>
-        <pin num="2" name="PIO1_19/~DTR~/SSEL1" type="BiDi"/>
-        <pin num="3" name="~RESET~/PIO0_0" type="BiDi"/>
-        <pin num="4" name="PIO0_1/CLKOUT/CT32B0_MAT2/USB_FTOGGLE" type="BiDi"/>
-        <pin num="5" name="VSS" type="power_in"/>
-        <pin num="6" name="XTALIN" type="input"/>
-        <pin num="7" name="XTALOUT" type="output"/>
-        <pin num="8" name="VDD" type="power_in"/>
-        <pin num="9" name="PIO0_20/CT16B1_CAP0" type="BiDi"/>
-        <pin num="10" name="PIO0_2/SSEL0/CT16B0_CAP0" type="BiDi"/>
-        <pin num="11" name="PIO1_26/CT32B0_MAT2/RXD" type="BiDi"/>
-        <pin num="12" name="PIO1_27/CT32B0_MAT3/TXD" type="BiDi"/>
-        <pin num="13" name="PIO1_20/~DSR~/SCK1" type="BiDi"/>
-        <pin num="14" name="PIO0_3/USB_VBUS" type="BiDi"/>
-        <pin num="15" name="PIO0_4/SCL" type="BiDi"/>
-        <pin num="16" name="PIO0_5/SDA" type="BiDi"/>
-        <pin num="17" name="PIO0_21/CT16B1_MAT0/MOSI1" type="BiDi"/>
-        <pin num="18" name="PIO1_23/CT16B1_MAT1/SSEL1" type="BiDi"/>
-        <pin num="19" name="USB_DM" type="BiDi"/>
-        <pin num="20" name="USB_DP" type="BiDi"/>
-        <pin num="21" name="PIO1_24/CT32B0_MAT0" type="BiDi"/>
-        <pin num="22" name="PIO0_6/~USB_CONNECT~/SCK0" type="BiDi"/>
-        <pin num="23" name="PIO0_7/~CTS~" type="BiDi"/>
-        <pin num="24" name="PIO1_28/CT32B0_CAP0/SCLK" type="BiDi"/>
-        <pin num="25" name="PIO1_31" type="BiDi"/>
-        <pin num="26" name="PIO1_21/~DCD~/MISO1" type="BiDi"/>
-        <pin num="27" name="PIO0_8/MISO0/CT16B0_MAT0" type="BiDi"/>
-        <pin num="28" name="PIO0_9/MOSI0/CT16B0_MAT1" type="BiDi"/>
-        <pin num="29" name="SWCLK/PIO0_10/SCK0/CT16B0_MAT2" type="BiDi"/>
-        <pin num="30" name="PIO0_22/AD6/CT16B1_MAT1/MISO1" type="BiDi"/>
-        <pin num="31" name="PIO1_29/SCK0/CT32B0_CAP1" type="BiDi"/>
-        <pin num="32" name="TDI/PIO0_11/AD0/CT32B0_MAT3" type="BiDi"/>
-        <pin num="33" name="TMS/PIO0_12/AD1/CT32B1_CAP0" type="BiDi"/>
-        <pin num="34" name="TDO/PIO0_13/AD2/CT32B1_MAT0" type="BiDi"/>
-        <pin num="35" name="~TRST~/PIO0_14/AD3/CT32B1_MAT1" type="BiDi"/>
-        <pin num="36" name="PIO1_13/~DTR~/CT16B0_MAT0/TXD" type="BiDi"/>
-        <pin num="37" name="PIO1_14/~DSR~/CT16B0_MAT1/RXD" type="BiDi"/>
-        <pin num="38" name="PIO1_22/~RI~/MOSI1" type="BiDi"/>
-        <pin num="39" name="SWDIO/PIO0_15/AD4/CT32B1_MAT2" type="BiDi"/>
-        <pin num="40" name="PIO0_16/AD5/CT32B1_MAT3/WAKEUP" type="BiDi"/>
-        <pin num="41" name="VSS" type="power_in"/>
-        <pin num="42" name="PIO0_23/AD7" type="BiDi"/>
-        <pin num="43" name="PIO1_15/~DCD~/CT16B0_MAT2/SCK1" type="BiDi"/>
-        <pin num="44" name="VDD" type="power_in"/>
-        <pin num="45" name="PIO0_17/~RTS~/CT32B0_CAP0/SCLK" type="BiDi"/>
-        <pin num="46" name="PIO0_18/RXD/CT32B0_MAT0" type="BiDi"/>
-        <pin num="47" name="PIO0_19/TXD/CT32B0_MAT1" type="BiDi"/>
-        <pin num="48" name="PIO1_16/~RI~/CT16B0_CAP0" type="BiDi"/>
+        <pin num="BA" name="BLUE_ANODE" type="passive"/>
+        <pin num="BC" name="BLUE_CATHODE" type="passive"/>
+        <pin num="GA" name="GREEN_ANODE" type="passive"/>
+        <pin num="GC" name="GREEN_CATHODE" type="passive"/>
+        <pin num="RA" name="RED_ANODE" type="passive"/>
+        <pin num="RC" name="RED_CATHODE" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X02">
+      <footprints>
+        <fp>Pin_Header_Straight_1X02</fp>
+        <fp>Pin_Header_Angled_1X02</fp>
+        <fp>Socket_Strip_Straight_1X02</fp>
+        <fp>Socket_Strip_Angled_1X02</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
       </pins>
     </libpart>
   </libparts>
   <libraries>
+    <library logical="device">
+      <uri>/home/ricardo/devel/mod-hw-expression-pedal/hw-design/lib/kicad-library/library/device.lib</uri>
+    </library>
     <library logical="conn">
       <uri>/home/ricardo/devel/mod-hw-expression-pedal/hw-design/lib/kicad-library/library/conn.lib</uri>
     </library>
     <library logical="interface">
       <uri>/home/ricardo/devel/mod-hw-expression-pedal/hw-design/lib/kicad-library/library/interface.lib</uri>
     </library>
-    <library logical="device">
-      <uri>/home/ricardo/devel/mod-hw-expression-pedal/hw-design/lib/kicad-library/library/device.lib</uri>
+    <library logical="nxp_armmcu">
+      <uri>/home/ricardo/devel/mod-hw-expression-pedal/hw-design/lib/local-library/nxp_armmcu.lib</uri>
     </library>
     <library logical="regul">
       <uri>/home/ricardo/devel/mod-hw-expression-pedal/hw-design/lib/kicad-library/library/regul.lib</uri>
-    </library>
-    <library logical="nxp_armmcu">
-      <uri>/home/ricardo/devel/mod-hw-expression-pedal/hw-design/lib/local-library/nxp_armmcu.lib</uri>
     </library>
   </libraries>
   <nets>

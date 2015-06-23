@@ -1,12 +1,12 @@
 Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,MPN
-1,1,C1,10uF,device:CP1,Capacitors_ThroughHole:Capacitor5x6RM2.5,,UWX1E100MCL1GB
+1,1,C1,10uF,device:CP1,Capacitors_SMD:c_elec_5x5.3,,UWX1E100MCL1GB
 2,1,C10,10nF 500V,device:C,Capacitors_SMD:C_1206,,501R18W103KV4E
 3,2,"C11, C12",18pF,device:C,Capacitors_SMD:C_0603,,C1608C0G1H180J080AA
 4,1,C13,10nF,device:C,Capacitors_SMD:C_0603,,C1608X7R1E103K080AA
 5,6,"C14, C15, C16, C17, C18, C9",100nF X7R,device:C,Capacitors_SMD:C_0603,,C1608X7R1E104K080AA
 6,1,C2,10uF,device:C,Capacitors_SMD:C_0805,,GRM219R61E106KA12D
 7,4,"C3, C5, C6, C8",100nF,device:C,Capacitors_SMD:C_0603,,C1608X7R1E104K080AA
-8,2,"C4, C7",100uF,device:CP1,Capacitors_ThroughHole:Capacitor5x6RM2.5,,UWX1C101MCL1GB
+8,2,"C4, C7",100uF,device:CP1,Capacitors_SMD:c_elec_6.3x5.3,,UWX1C101MCL1GB
 9,1,D1,CGRA4007-G,device:D,Diodes_SMD:Diode-SMA_Standard,,CGRA4007-G
 10,2,"D2, D3",1N5819,device:D_Schottky,Diodes_SMD:SOD-123,,1N5819HW-7-F
 11,1,D4,1N4148,device:D,Diodes_SMD:SOD-323,,1N4148WX-TP
@@ -14,12 +14,12 @@ Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,MPN
 13,1,J1,CC_INPUT,conn:RJ45_LEDS,MOD_Footprints:RJ45-RJHSE5084,,RJHSE-5381
 14,1,J2,CC_OUTPUT,conn:RJ45_LEDS,MOD_Footprints:RJ45-RJHSE5084,,RJHSE-5381
 15,1,P1,CHAIN,conn:CONN_01X04,Pin_Headers:Pin_Header_Straight_1x04,,-
-16,1,P2,USB_OTG,conn:USB_OTG,,,10033526-N3212LF
-17,1,P3,CONN_02X05,conn:CONN_02X05,Pin_Headers:Pin_Header_Straight_2x05_Pitch1.27mm,,-
+16,1,P2,USB_OTG,conn:USB_OTG,Connect:USB_Mini-B,,10033526-N3212LF
+17,1,P3,SWD,conn:CONN_02X05,Pin_Headers:Pin_Header_Straight_2x05_Pitch1.27mm,,-
 18,1,P4,FOOT,conn:CONN_01X02,Pin_Headers:Pin_Header_Straight_1x02,,M20-9990246
 19,1,P5,10K POT,conn:CONN_01X03,Pin_Headers:Pin_Header_Straight_1x03,,M20-9990346
 20,4,"Q1, Q2, Q4, Q5",2N7002,device:Q_NMOS_GSD,Housings_SOT-23_SOT-143_TSOT-6:SOT-23,,"2N7002P,215"
-21,1,Q3,FDN306P,device:Q_PMOS_GSD,,,FDN306P_F095
+21,1,Q3,FDN306P,device:Q_PMOS_GSD,local-footprints:SOT-23-fairchild,,FDN306P_F095
 22,1,Q6,IRFML8244TRPBF,device:Q_NMOS_GSD,Housings_SOT-23_SOT-143_TSOT-6:SOT-23,,IRFML8244TRPBF
 23,1,Q7,BC857,device:Q_PNP_BEC,Housings_SOT-23_SOT-143_TSOT-6:SOT-23,,"BC857B,215"
 24,1,R1,3K6,device:R,Resistors_SMD:R_0603,,RMCF0603JT3K60
