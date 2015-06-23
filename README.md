@@ -2,21 +2,15 @@ mod-hw-expression-pedal
 =======================
 
 This repository contains the schematics and PCB design files for the Expression Pedal hardware.
-This is a peripheral meant to be used in conjunction with the MOD pedalboard (http://portalmod.com/) via its control-chain interface.
+This is a peripheral meant to be used in conjunction with MOD (http://moddevices.com/) via its control-chain interface.
 
 These files were created and can be improved with KiCAD, a free software Electronics CAD which is available at http://www.kicad-pcb.org/
 
 ## Check out instructions ##
 
-This project uses a set of KiCAD pcb footprints (https://github.com/portalmod/mod-kicad-footprints) and KiCAD schematics component symbols (https://github.com/portalmod/mod-kicad-libs) created by the MOD dev-team. In order to properly fetch these dependencies, which are configured as submodule repositories, you have to use the **--recursive** attribute in the following **git** command:
+This project uses a set of KiCAD symbols and footprints provided by the official KiCad library (https://github.com/KiCad/). In order to properly fetch these dependencies, which are configured as submodule repositories, you have to use the **--recursive** attribute in the following **git** command:
 
 > git clone --recursive https://github.com/portalmod/mod-hw-expression-pedal.git
-
-## 3d models ##
-
-If you want to use the 3d-viewer, you will need to install the kicad-common package which provides (among other things) a set of 3d models of electronic components.
-
-> sudo apt-get install kicad-common
 
 ## Licensing ##
 
