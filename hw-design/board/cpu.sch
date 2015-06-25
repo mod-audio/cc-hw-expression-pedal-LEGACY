@@ -223,10 +223,10 @@ L R R20
 U 1 1 557DE7C0
 P 4050 6450
 F 0 "R20" V 3950 6450 50  0000 C CNN
-F 1 "100R" V 4050 6450 50  0000 C CNN
+F 1 "2K" V 4050 6450 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 3980 6450 30  0000 C CNN
 F 3 "" H 4050 6450 30  0000 C CNN
-F 4 "RMCF0603JT100R" H 0   0   50  0001 C CNN "MPN"
+F 4 "RMCF0603JT2K00" H 0   0   50  0001 C CNN "MPN"
 	1    4050 6450
 	0    1    1    0   
 $EndComp
@@ -382,10 +382,10 @@ F 3 "" H 1700 1450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R21
+L R R22
 U 1 1 558018EB
 P 10000 1500
-F 0 "R21" V 10100 1500 50  0000 C CNN
+F 0 "R22" V 10100 1500 50  0000 C CNN
 F 1 "10k" V 10000 1500 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 9930 1500 30  0000 C CNN
 F 3 "" H 10000 1500 30  0000 C CNN
@@ -458,25 +458,25 @@ Text GLabel 7850 2200 2    50   Input ~ 0
 USB_VBUS
 Text GLabel 7850 2500 2    50   Output ~ 0
 USB_CONNECT
-Text GLabel 4350 6450 2    50   Output ~ 0
+Text GLabel 4500 6450 2    50   Output ~ 0
 USB_VBUS
 Text GLabel 4300 7200 2    50   Output ~ 0
 USB_DM
 Text GLabel 4300 7350 2    50   Output ~ 0
 USB_DP
-Text GLabel 3900 3700 0    50   Input ~ 0
+Text GLabel 3950 3700 0    50   Input ~ 0
 USB_DM
-Text GLabel 3900 3800 0    50   Input ~ 0
+Text GLabel 3950 3800 0    50   Input ~ 0
 USB_DP
 Text Notes 2450 5700 0    100  ~ 0
 USB DEVICE
 Text GLabel 1500 7100 0    50   Input ~ 0
 USB_CONNECT
-Text GLabel 3900 2000 0    50   Output ~ 0
+Text GLabel 3950 2000 0    50   Output ~ 0
 CHAIN_TX
-Text GLabel 3900 2100 0    50   Input ~ 0
+Text GLabel 3950 2100 0    50   Input ~ 0
 CHAIN_RX
-Text GLabel 3900 2200 0    50   Output ~ 0
+Text GLabel 3950 2200 0    50   Output ~ 0
 CHAIN_DE
 Text GLabel 1800 1300 2    50   Input ~ 0
 CHAIN_TX
@@ -504,23 +504,23 @@ Text GLabel 7850 2800 2    50   Output ~ 0
 SWO
 Text GLabel 7850 3000 2    50   Input ~ 0
 POT
-Text GLabel 3900 2800 0    50   Input ~ 0
+Text GLabel 7850 2000 2    50   Input ~ 0
 FS1
-Text GLabel 3900 2400 0    50   Input ~ 0
+Text GLabel 3950 2400 0    50   Input ~ 0
 CH1
-Text GLabel 3900 2500 0    50   Input ~ 0
+Text GLabel 3950 2500 0    50   Input ~ 0
 CH2
-Text GLabel 3900 2600 0    50   Input ~ 0
+Text GLabel 3950 2600 0    50   Input ~ 0
 CH3
 Text GLabel 7850 3700 2    50   Output ~ 0
 RX_LED
 Text GLabel 7850 3800 2    50   Output ~ 0
 TX_LED
-Text GLabel 3900 3300 0    50   Output ~ 0
+Text GLabel 3950 3300 0    50   Output ~ 0
 FS1_LED_R
-Text GLabel 3900 3400 0    50   Output ~ 0
+Text GLabel 3950 3400 0    50   Output ~ 0
 FS1_LED_G
-Text GLabel 3900 3500 0    50   Output ~ 0
+Text GLabel 3950 3500 0    50   Output ~ 0
 FS1_LED_B
 Wire Wire Line
 	9200 3550 9200 3950
@@ -595,7 +595,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 7200 3450 6400
 Wire Wire Line
-	4200 6450 4350 6450
+	4200 6450 4500 6450
 Wire Wire Line
 	3550 6450 3900 6450
 Wire Wire Line
@@ -617,9 +617,9 @@ Wire Wire Line
 Wire Wire Line
 	2850 6400 2850 6600
 Wire Wire Line
-	3900 3700 4100 3700
+	3950 3700 4100 3700
 Wire Wire Line
-	4100 3800 3900 3800
+	4100 3800 3950 3800
 Wire Wire Line
 	1950 7100 2150 7100
 Wire Wire Line
@@ -641,11 +641,11 @@ Wire Wire Line
 Wire Wire Line
 	3750 6900 3750 6850
 Wire Wire Line
-	3900 2000 4100 2000
+	3950 2000 4100 2000
 Wire Wire Line
-	3900 2100 4100 2100
+	3950 2100 4100 2100
 Wire Wire Line
-	4100 2200 3900 2200
+	4100 2200 3950 2200
 Wire Wire Line
 	1650 1300 1800 1300
 Wire Wire Line
@@ -685,23 +685,23 @@ Wire Wire Line
 Wire Wire Line
 	7850 3000 7700 3000
 Wire Wire Line
-	3900 2400 4100 2400
+	3950 2400 4100 2400
 Wire Wire Line
-	4100 2500 3900 2500
+	4100 2500 3950 2500
 Wire Wire Line
-	3900 2600 4100 2600
+	3950 2600 4100 2600
 Wire Wire Line
-	4100 2800 3900 2800
+	7700 2000 7850 2000
 Wire Wire Line
 	7850 3700 7700 3700
 Wire Wire Line
 	7850 3800 7700 3800
 Wire Wire Line
-	4100 3300 3900 3300
+	4100 3300 3950 3300
 Wire Wire Line
-	3900 3400 4100 3400
+	3950 3400 4100 3400
 Wire Wire Line
-	4100 3500 3900 3500
+	4100 3500 3950 3500
 Connection ~ 9200 3650
 Connection ~ 9200 3850
 Connection ~ 3850 3900
@@ -727,7 +727,7 @@ NoConn ~ 4100 2900
 NoConn ~ 4100 3000
 NoConn ~ 4100 3100
 NoConn ~ 4100 3200
-NoConn ~ 7700 2000
+NoConn ~ 4100 2800
 NoConn ~ 7700 2100
 NoConn ~ 7700 2300
 NoConn ~ 7700 2400
@@ -743,4 +743,32 @@ NoConn ~ 7700 4000
 NoConn ~ 7700 4100
 NoConn ~ 7700 4200
 NoConn ~ 4100 2300
+$Comp
+L R R21
+U 1 1 558BCA3B
+P 4350 6700
+F 0 "R21" V 4250 6700 50  0000 C CNN
+F 1 "3K3" V 4350 6700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4280 6700 30  0000 C CNN
+F 3 "" H 4350 6700 30  0000 C CNN
+F 4 "RMCF0603JT3K30" H 300 250 50  0001 C CNN "MPN"
+	1    4350 6700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4350 6550 4350 6450
+Connection ~ 4350 6450
+$Comp
+L GNDD #PWR060
+U 1 1 558BD1E6
+P 4350 6900
+F 0 "#PWR060" H 4350 6650 50  0001 C CNN
+F 1 "GNDD" H 4350 6750 50  0000 C CNN
+F 2 "" H 4350 6900 60  0000 C CNN
+F 3 "" H 4350 6900 60  0000 C CNN
+	1    4350 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 6900 4350 6850
 $EndSCHEMATC
