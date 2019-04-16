@@ -1,4 +1,4 @@
-mod-hw-expression-pedal
+Legacy mod-hw-expression-pedal
 =======================
 
 This repository contains the schematics and PCB design files for the Expression Pedal hardware.
