@@ -10,12 +10,23 @@ These files were created and can be improved with KiCAD, a free software Electro
 
 This project uses a set of KiCAD symbols and footprints provided by the official KiCad library (https://github.com/KiCad/). In order to properly fetch these dependencies, which are configured as submodule repositories, you have to use the **--recursive** attribute in the following **git** command:
 
-> git clone --recursive https://github.com/portalmod/mod-hw-expression-pedal.git
+> git clone --recursive https://github.com/mod-audio/cc-hw-expression-pedal-LEGACY.git
 
 ## Licensing ##
 
-This is an Open Hardware project and all of the files in this repository are licensed under the terms of the "Creative Commons By-SA" license.
+Copyright (c) 2014-2026 MOD Audio Limited.
+
+The hardware design files (schematics, PCB layouts, fabrication files, BOMs) are licensed under
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (see [`LICENSE`](LICENSE)).
+This is an open hardware project: you may use, modify, build and sell it, as long as you credit MOD Audio
+and share your modified design files under the same licence.
+
+Third-party files (manufacturer component models, library parts, supplier documents) are not covered by
+this licence. See [`NOTICE`](NOTICE) for the list.
+
+The MOD logo is a registered trademark (EU trade mark no. 016228827; UK trade mark no. UK00916228827).
+The licence gives no right to use the MOD name or logo. See [`NOTICE`](NOTICE).
 
 ## Firmware ##
 
-The firmware source code is freely available at https://github.com/portalmod/mod-fw-expression-pedal
+The firmware is kept in a separate repository and is not part of this one.

@@ -1,0 +1,47 @@
+MOD Expression Pedal hardware design files (legacy KiCad design)
+Copyright (c) 2014-2026 MOD Audio Limited
+
+Licensing
+---------
+
+Everything in this repository, on every branch and in its history, except the
+third-party files listed below, is licensed under the Creative Commons
+Attribution-ShareAlike 4.0 International licence (CC BY-SA 4.0). Full text: LICENSE.
+https://creativecommons.org/licenses/by-sa/4.0/
+
+This project has been published as open hardware under "Creative Commons By-SA"
+since 2014 (README). This file states it formally as CC BY-SA 4.0. Nothing
+changes for anyone who already uses the files.
+
+Third-party files
+-----------------
+
+The following files were made by their respective manufacturers or authors and
+are included only so the design opens and renders complete. They are NOT
+covered by the licence above. Their owners' terms apply; get them from the
+original source if you want to reuse them.
+
+- KiCad libraries linked as git submodules under hw-design/lib/ (from
+  https://github.com/KiCad/). They are separate repositories under their own
+  licences.
+- Symbol and footprint files that come from third-party or KiCad libraries:
+    hw-design/lib/local-library/nxp_armmcu.*
+    hw-design/lib/local-footprints.pretty/SOT-23-fairchild.kicad_mod
+
+Trademarks
+----------
+
+The MOD logo is a registered trademark (EU trade mark no. 016228827; UK trade
+mark no. UK00916228827).
+
+No licence in this repository grants any right to use the MOD name or logo.
+Any MOD logo in these files (mod-logo footprint, board silkscreen) is included for
+reference only. Anything you build or derive from these files must not carry
+the MOD logo and must not be presented as a MOD product or as made or endorsed
+by MOD Audio.
+
+No warranty
+-----------
+
+These files are provided as-is, without warranty of any kind. See the
+disclaimer in the licence text.
